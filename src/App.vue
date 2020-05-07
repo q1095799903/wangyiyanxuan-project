@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-   test
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'App',
 }
 </script>
 
-<style>
+<style lang="stylus" scoped>
+ #app
+   width 100%
+   height 100%
 
 </style>
