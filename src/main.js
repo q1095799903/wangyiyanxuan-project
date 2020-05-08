@@ -10,6 +10,9 @@ import router from './router/index'
 import store from './store/index'
 //3.引入iconfont
 import './static/iconfont/iconfont.css'
+//4.注册axios
+import http from './http/index'
+Vue.prototype.$http = http
 new Vue({
   router,
   store,

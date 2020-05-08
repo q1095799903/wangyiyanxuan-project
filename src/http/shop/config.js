@@ -1,17 +1,11 @@
 export default {
-  name:"seller",
+  name:"recommend",
+  baseUrl:'/4444',
   api:{
-    getSeller:{
-      url:"/api/seller",
+    getIndexRecommend:{
+      url:"/indexRecommend",
       method:"get"
     },
-    getGoods:{
-        url:"/api/goods",
-        method:"get"
-    },
-    getRatings:{
-        url:"/api/ratings",
-        method:"get"
-    }
+   
   }
 }

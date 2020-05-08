@@ -14,6 +14,19 @@ module.exports = {
         ]
       }
     }
+  },
+  
+  devServer:{
+    open:true,
+    proxy:{
+      '/4444': {
+          target: 'http://localhost:4444',
+          changeOrigin: true,
+          pathRewrite:{
+              "^/4444":""
+          }
+      }
+  }
   }
 
 }
